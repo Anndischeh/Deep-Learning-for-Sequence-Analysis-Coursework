@@ -1,0 +1,16 @@
+pandas
+numpy
+torch
+nltk
+beautifulsoup4
+textblob
+emoji
+wordcloud
+matplotlib
+seaborn
+scikit-learn
+transformers
+tqdm
+wandb
+nbformat
+wandb 
