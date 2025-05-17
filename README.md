@@ -1,9 +1,7 @@
-```markdown
 # Deep Learning for Sequential Analysis
 
 A PyTorch/TensorFlow repository for sentiment analysis on the [IMDb Movie Reviews dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews).  
-Training logs, metrics, and visualizations are available on Weights & Biases:  
-https://wandb.ai/anndischeh-univ-/Deep%20Learning%20for%20Sequential%20Analysis?nw=nwuseranndischeh
+Training logs, metrics, and visualizations are available on [Weights & Biases](https://wandb.ai/anndischeh-univ-/Deep%20Learning%20for%20Sequential%20Analysis?nw=nwuseranndischeh).
 
 ---
 
@@ -41,7 +39,7 @@ https://wandb.ai/anndischeh-univ-/Deep%20Learning%20for%20Sequential%20Analysis?
 ## 📈 Results & Logs
 
 All experiment metrics, loss curves, and confusion matrices are logged to W\&B and can be explored here:
-[https://wandb.ai/anndischeh-univ-/Deep%20Learning%20for%20Sequential%20Analysis?nw=nwuseranndischeh](https://wandb.ai/anndischeh-univ-/Deep%20Learning%20for%20Sequential%20Analysis?nw=nwuseranndischeh)
+[WandB project for deep learning for sequence analysis coursework](https://wandb.ai/anndischeh-univ-/Deep%20Learning%20for%20Sequential%20Analysis?nw=nwuseranndischeh)
 
 ---
 
