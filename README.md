@@ -6,38 +6,77 @@ Training logs, metrics, and visualizations are available on [Weights & Biases](h
 
 ---
 
- ## 🚀Quick Start
 
-The `App.ipynb` notebook provides a streamlined interface for running inference without needing to delve into the underlying code:
+## 🚀 Quick Start
 
-**1. Setup in Google Colab:**
+You can run the project in **two** main ways:
 
-Upload: Upload all files and folders (including the `Deep_Learning_for_sequential_Analysis` directory) to your Google Colab environment. If you are using a zip file, unzip it first.
+---
 
-Install Requirements: Install the necessary Python packages by running the following commands:
+### ✅ **Option 1: Run Locally (Linux-based System)**
+
+This method uses a virtual environment to isolate dependencies.
+
+#### **1. Clone and Enter the Project Directory:**
+
+```bash
+git clone https://github.com/Anndischeh/Deep-Learning-for-Sequence-Analysis-Coursework.git
+cd <your-project-folder>
+```
+
+#### **2. Run the Setup Script:**
+
+This script will create and activate a virtual environment and install all required packages.
+
+```bash
+bash setup.sh
+```
+
+#### **3. Run Inference with `main.py`:**
+
+```bash
+python main.py --model_type cnn --mode all --text "I fell asleep halfway through."
+```
+
+> 📌 You can replace `cnn` with other models like `dcnn`, `rnn`, `lstm`, `gru`, `distilbert` and change the input text as needed.
+
+---
+
+### 📒 **Option 2: Run in Google Colab**
+
+If you prefer not to set up a local environment, run everything in a Colab notebook.
+
+#### **1. Upload Files:**
+
+Upload all necessary files and folders (including `Deep_Learning_for_Sequence_Analysis`) to your Colab session. If you upload a zip file, unzip it first:
 
 ```python
- !unzip Deep_Learning_for_sequential_Analysis.zip  # Only if uploading a zip file
- !pip install -r requirements.txt
- ```
+!unzip Deep_Learning_for_Sequence_Analysis.zip
+```
 
-
-Wandb Login: Authenticate with Weights & Biases (wandb) using your API key. Replace wandb_key with your actual API key:
+#### **2. Install Requirements:**
 
 ```python
- import wandb
- wandb.login(key="YOUR_WANDB_API_KEY")
- ```
+!pip install -r requirements.txt
+```
 
-**⚠️2. Running Inference with `main.py`:**
+#### **3. Login to Weights & Biases (wandb):**
 
-📌 The `main.py` script allows you to specify the model and mode of operation. The following commands demonstrate running inference with various models and a sample input text.
-
-Model Selection and Inference: Choose the model you want to use (e.g., cnn, dcnn, rnn, lstm, gru, distilbert). The --mode all argument likely runs all available processes or functions associated with the model (e.g., training, testing, prediction). The --text argument takes a string to be used as input for testing (e.g., "I fell asleep halfway through."). Change the text and file paths as required.
+Replace with your actual WandB API key:
 
 ```python
- %run main.py --model_type cnn --mode all --text "I fell asleep halfway through."
- ```
+import wandb
+wandb.login(key="YOUR_WANDB_API_KEY")
+```
+
+#### **4. Run Inference in Colab:**
+
+```python
+%run main.py --model_type cnn --mode all --text "I fell asleep halfway through."
+```
+
+---
+
 
 
 ## 📈 Results & Logs
