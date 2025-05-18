@@ -6,8 +6,38 @@ Training logs, metrics, and visualizations are available on [Weights & Biases](h
 
 ---
 
-## 🚀 Quick Start
+🚀 Quick Start
 
+The App.ipynb notebook provides a streamlined interface for running inference without needing to delve into the underlying code. This guide outlines the steps to use it within Google Colab:
+
+1. Setup in Google Colab:
+
+Upload: Upload all files and folders (including the Deep_Learning_for_sequential_Analysis directory) to your Google Colab environment. If you are using a zip file, unzip it first.
+
+Install Requirements: Install the necessary Python packages by running the following commands:
+
+```python
+ !unzip /content/Deep_Learning_for_sequential_Analysis.zip  # Only if uploading a zip file
+ !pip install -r requirements.txt
+ ```
+
+
+Wandb Login: Authenticate with Weights & Biases (wandb) using your API key. Replace wandb_key with your actual API key:
+
+```python
+ import wandb
+ wandb.login(key="YOUR_WANDB_API_KEY")
+ ```
+
+2. Running Inference with main.py:
+
+The main.py script allows you to specify the model and mode of operation. The following commands demonstrate running inference with various models and a sample input text.
+
+Model Selection and Inference: Choose the model you want to use (e.g., cnn, dcnn, rnn, lstm, gru, distilbert). The --mode all argument likely runs all available processes or functions associated with the model (e.g., training, testing, prediction). The --text argument takes a string to be used as input for testing (e.g., "I fell asleep halfway through."). Change the text and file paths as required.
+
+```python
+ %run main.py --model_type cnn --mode all --text "I fell asleep halfway through."
+ ```
 
 
 ## 📈 Results & Logs
@@ -26,23 +56,24 @@ All experiment metrics, loss curves, and confusion matrices are logged to W\&B a
 ```
 
 ├── data/
-│   ├── raw/                   # original IMDb dataset files
-│   └── processed/             # tokenized, padded, and split train/val/test sets
-├── notebooks/                 # Jupyter notebooks for EDA & prototyping
-├── src/
-│   ├── datasets.py            # Dataset loading & preprocessing
-│   ├── models.py              # Model definitions (RNN, LSTM, Transformer…)
-│   ├── train.py               # Training loop, logging to W\&B
-│   ├── evaluate.py            # Evaluation & metrics
-│   └── utils.py               # helper functions
-├── configs/
-│   └── default.yaml           # hyperparameters & paths
-├── scripts/
-│   ├── prepare\_data.sh        # download & preprocess data
-│   └── run\_experiment.sh      # example command-line launch
-├── requirements.txt           # Python dependencies
-├── README.md                  # this file
-└── .gitignore
+│   └── IMDB_Dataset.csv        
+├── models/
+│   ├── cnn_model.py           
+│   ├── rnn_model.py           
+│   └── transformer_model.py                
+├── preprocessing/
+│   └── text_processor.py          
+├── training/
+│   ├── evaluator.py        
+│   └── trainer.py
+├── utils/
+│   ├── dataset.py
+│   ├── helpers.py     
+│   └── predictors.py     
+├── App.ipynb           
+├── config.py          
+├── main.py
+└── README.md                  
 
 ````
 
