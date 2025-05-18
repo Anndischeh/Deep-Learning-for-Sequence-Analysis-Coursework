@@ -29,7 +29,7 @@ cd <your-project-folder>
 This script will create and activate a virtual environment and install all required packages.
 
 ```bash
-bash setup.sh
+./setup.sh
 ```
 
 #### **3. Run Inference with `main.py`:**
