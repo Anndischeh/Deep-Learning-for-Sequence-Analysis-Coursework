@@ -38,7 +38,7 @@ This script will create and activate a virtual environment and install all requi
 python main.py --model_type cnn --mode all --text "I fell asleep halfway through."
 ```
 
-> 📌 You can replace `cnn` with other models like `dcnn`, `rnn`, `lstm`, `gru`, `distilbert` and change the input text as needed.
+> 📌 You can replace `cnn` with other models like `dcnn`, `rnn`, `lstm`, `gru`, `distilbert`, and change the input text as needed.
 
 ---
 
@@ -48,7 +48,7 @@ If you prefer not to set up a local environment, run everything in a Colab noteb
 
 #### **1. Upload Files:**
 
-Upload all necessary files and folders (including `Deep_Learning_for_Sequence_Analysis`) to your Colab session. If you upload a zip file, unzip it first:
+Upload all necessary files and folders (including `Deep_Learning_for_Sequence_Analysis`) to your Colab session besides the main notebook `App.ipynb`. If you upload a zip file, unzip it first:
 
 ```python
 !unzip Deep_Learning_for_Sequence_Analysis.zip
