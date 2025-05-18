@@ -48,7 +48,9 @@ If you prefer not to set up a local environment, run everything in a Colab noteb
 
 #### **1. Upload Files:**
 
-Upload all necessary files and folders (including `Deep_Learning_for_Sequence_Analysis`) to your Colab session besides the main notebook `App.ipynb`. If you upload a zip file, unzip it first:
+Upload all necessary files and folders (including `Deep_Learning_for_Sequence_Analysis`) to your Colab session, except for the main notebook `App.ipynb`. The instructions and code below are already included in that notebook.
+
+If you upload a zip file, unzip it first:
 
 ```python
 !unzip Deep_Learning_for_Sequence_Analysis.zip
