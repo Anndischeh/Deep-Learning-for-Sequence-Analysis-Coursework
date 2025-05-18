@@ -6,18 +6,18 @@ Training logs, metrics, and visualizations are available on [Weights & Biases](h
 
 ---
 
-🚀 Quick Start
+ ## 🚀Quick Start
 
-The App.ipynb notebook provides a streamlined interface for running inference without needing to delve into the underlying code. This guide outlines the steps to use it within Google Colab:
+The App.ipynb notebook provides a streamlined interface for running inference without needing to delve into the underlying code:
 
-1. Setup in Google Colab:
+**1. Setup in Google Colab:**
 
 Upload: Upload all files and folders (including the Deep_Learning_for_sequential_Analysis directory) to your Google Colab environment. If you are using a zip file, unzip it first.
 
 Install Requirements: Install the necessary Python packages by running the following commands:
 
 ```python
- !unzip /content/Deep_Learning_for_sequential_Analysis.zip  # Only if uploading a zip file
+ !unzip Deep_Learning_for_sequential_Analysis.zip  # Only if uploading a zip file
  !pip install -r requirements.txt
  ```
 
@@ -29,7 +29,7 @@ Wandb Login: Authenticate with Weights & Biases (wandb) using your API key. Repl
  wandb.login(key="YOUR_WANDB_API_KEY")
  ```
 
-2. Running Inference with main.py:
+**2. Running Inference with main.py:**
 
 The main.py script allows you to specify the model and mode of operation. The following commands demonstrate running inference with various models and a sample input text.
 
