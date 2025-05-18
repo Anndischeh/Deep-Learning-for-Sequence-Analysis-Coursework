@@ -86,33 +86,33 @@ All experiment metrics, loss curves, and confusion matrices are logged to W\&B a
 
 ----
 
-## 🛠️ Configuration
-
-----
-
 ## 📂 Repository Structure
 
 ```
 
 ├── data/
-│   └── IMDB_Dataset.csv        
-├── models/
-│   ├── cnn_model.py           
-│   ├── rnn_model.py           
-│   └── transformer_model.py                
-├── preprocessing/
-│   └── text_processor.py          
-├── training/
-│   ├── evaluator.py        
-│   └── trainer.py
-├── utils/
-│   ├── dataset.py
-│   ├── helpers.py     
-│   └── predictors.py     
-├── App.ipynb           
-├── config.py          
-├── main.py
-└── README.md                  
+│   └── IMDB_Dataset.csv              # IMDB reviews dataset with corresponding sentiment labels
+│
+├── models/                           # Contains different model architectures for sentiment classification
+│   ├── cnn_model.py                  # CNN-based models, including Dynamic MaxPool variations
+│   ├── rnn_model.py                  # RNN-based models, including LSTM and GRU variants
+│   └── transformer_model.py          # DistilBERT-based model (requires GPU for efficient execution)
+│
+├── preprocessing/                    # Text preprocessing scripts
+│   └── text_processor.py             # Handles data cleaning (removing URLs, stopwords, etc.) and data visualization
+│
+├── training/                         # Training and evaluation utilities
+│   ├── evaluator.py                  # Class for evaluating trained models (accuracy, F1 score, etc.)
+│   └── trainer.py                    # Class for training models with given parameters
+│
+├── utils/                            # Utility scripts for data handling and model management
+│   ├── dataset.py                    # Dataset loader and data splitter
+│   ├── helpers.py                    # Helper functions for plotting, model saving/loading, etc.
+│   └── predictors.py                 # Utilities for making sentiment predictions
+│
+├── App.ipynb                         # Interactive notebook for demonstrating sentiment prediction, which helps run all other scripts.
+├── config.py                         # Centralized configuration file for setting hyperparameters and paths
+└── main.py                           # Main execution script (can be renamed to train.py if desired, but kept as main.py to avoid confusion with trainer.py) 
 
 ````
 
