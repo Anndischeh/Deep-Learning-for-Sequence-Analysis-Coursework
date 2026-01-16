@@ -1,4 +1,26 @@
 # Deep Learning for Sequential Analysis
+
+![Python](https://img.shields.io/badge/python-3.8+-blue)
+![PyTorch](https://img.shields.io/badge/pytorch-2.0+-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+## 🌟 Project Highlights
+- DistilBERT achieved **91.6% test accuracy** and **0.92 F1-score**
+- RNN/LSTM/GRU/CNN models implemented to compare efficiency vs performance
+- Preprocessing pipeline included tokenization, stopword removal, stemming, and attention masks for Transformers
+- All experiments logged and visualized in [Weights & Biases](https://wandb.ai/anndischeh-univ-/Deep%20Learning%20for%20Sequential%20Analysis?nw=nwuseranndischeh)
+
+| Model      | Accuracy | F1-score |
+|------------|---------|----------|
+| CNN        | 0.804   | 0.813    |
+| DCNN       | 0.799   | 0.807    |
+| RNN        | 0.504   | 0.091    |
+| LSTM       | 0.859   | 0.857    |
+| GRU        | 0.849   | 0.846    |
+| DistilBERT | 0.916   | 0.920    |
+
+---
+
 ## DeepLearning-Approaches-for-Binary-Sentiment-Classification-on-IMDB
 
 A PyTorch/TensorFlow repository for sentiment analysis on the [IMDb Movie Reviews dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews).  
@@ -6,6 +28,12 @@ Training logs, metrics, and visualizations are available on [Weights & Biases](h
 
 ---
 
+## 🛠 Prerequisites
+- Python >= 3.8
+- PyTorch >= 2.0
+- TensorFlow (optional, for comparison)
+- NLTK, Transformers, WandB
+- Linux / Colab recommended for GPU support
 
 ## 🚀 Quick Start
 
