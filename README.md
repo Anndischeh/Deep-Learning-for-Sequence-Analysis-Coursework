@@ -105,7 +105,7 @@ wandb.login(key="YOUR_WANDB_API_KEY")
 %run main.py --model_type cnn --mode all --text "I fell asleep halfway through."
 ```
 
-----
+---
 
 
 
