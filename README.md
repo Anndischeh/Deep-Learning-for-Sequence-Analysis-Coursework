@@ -2,7 +2,19 @@
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue)
 ![PyTorch](https://img.shields.io/badge/pytorch-2.0+-orange)
+![NLP](https://img.shields.io/badge/task-NLP-blueviolet)
+![Text Classification](https://img.shields.io/badge/task-Text%20Classification-informational)
+![Weights & Biases](https://img.shields.io/badge/experiment_tracking-W%26B-yellow)
+![Reproducible](https://img.shields.io/badge/reproducible-experiments-success)
+![Dataset](https://img.shields.io/badge/dataset-IMDb%2050K-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![CNN](https://img.shields.io/badge/model-CNN-lightgrey)
+![RNN](https://img.shields.io/badge/model-RNN-lightgrey)
+![LSTM](https://img.shields.io/badge/model-LSTM-lightgrey)
+![GRU](https://img.shields.io/badge/model-GRU-lightgrey)
+![Transformer](https://img.shields.io/badge/model-Transformer-lightgrey)
+
+
 
 ## 🌟 Project Highlights
 - DistilBERT achieved **91.6% test accuracy** and **0.92 F1-score**
